@@ -1,10 +1,9 @@
 import {ReactNode} from 'react';
-
 import type {Metadata} from 'next';
 
-import {Inter} from 'next/font/google';
-
 import './globals.css';
+import {Inter} from 'next/font/google';
+import {Header} from '~/components/Layout/Header';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -20,7 +19,15 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-		<body className={inter.className}>{children}</body>
+		<body className={inter.className}>
+		<Header/>
+		<main className="container mx-auto grid grid-cols-2 gap-4 place-content-start h-48">
+			{children}
+			<h1 className='text-3xl'>
+				This side is in building
+			</h1>
+		</main>
+		</body>
 		</html>
 	);
 }

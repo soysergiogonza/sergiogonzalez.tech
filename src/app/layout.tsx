@@ -24,10 +24,11 @@ export default function RootLayout({
 		<body className={inter.className}>
 		<Header/>
 		<main className="container mx-auto grid grid-cols-2 gap-4 place-content-start h-48">
-			{/*{children}*/}
-			This side is in building
+			{children}
+			<h1 className='text-3xl'>
+				This side is in building
+			</h1>
 		</main>
-		{/*<Footer/>*/}
 		</body>
 		</html>
 	);

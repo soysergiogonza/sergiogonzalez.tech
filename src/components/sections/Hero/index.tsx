@@ -12,7 +12,7 @@ const Hero = () => {
                  className='border-2 border-white rounded-full' />
           <div>
             <h1 className='text-4xl font-bold text-white'>Sergio González Sánchez</h1>
-            <h2 className='text-base font-light text-white'>React Frontend Developer at EvolutionCode</h2>
+            <h2 className='text-base font-light text-white'>Frontend Developer | Frontend Architect</h2>
           </div>
         </div>
       </div>

@@ -8,23 +8,23 @@ import {Header} from '~/components/Layout/Header';
 const inter = Inter({subsets: ['latin']});
 
 export const metadata: Metadata = {
-	title: 'Sergio González Sánchez',
-	description: 'Frontend Developer',
+  title: 'Sergio González Sánchez',
+  description: 'Frontend Developer',
 };
 
 export default function RootLayout({
-	                                   children,
+                                     children,
                                    }: {
-	children: ReactNode
+  children: ReactNode
 }) {
-	return (
-		<html lang="en">
-		<body className={inter.className}>
-		<Header/>
-		<main className="container mx-auto grid h-48">
-			{children}
-		</main>
-		</body>
-		</html>
-	);
+  return (
+    <html lang='en'>
+    <body className={inter.className}>
+    <Header />
+    <main className='border-4 border-red-600 container mx-auto grid'>
+      {children}
+    </main>
+    </body>
+    </html>
+  );
 }

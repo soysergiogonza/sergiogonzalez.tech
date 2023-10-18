@@ -28,3 +28,32 @@ body {
     ) rgb(var(--background-start-rgb));
 
 }
+
+
+/* CARDS */
+/*.card2 {*/
+/*    !*transition: .4s ease-in-out;*!*/
+/*    border: 1px solid red*/
+/*}*/
+
+/*.card:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
+.card:hover + .card2 {
+    height: 300px;
+}
+
+.card:hover + .card2 .lower {
+    top: 14.8em;
+}
+
+
+/*.lower {*/
+/*    !*transition: .4s ease-in-out;*!*/
+/*    border: 1px solid green*/
+/*}*/
+
+/*.card3 {*/
+/*    transition: .4s ease-in-out;*/
+/*}*/

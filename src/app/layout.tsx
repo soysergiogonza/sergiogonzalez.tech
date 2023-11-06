@@ -4,8 +4,9 @@ import type {Metadata} from 'next';
 import './globals.css';
 import {Inter} from 'next/font/google';
 import {Header} from '~/components/Layout/Header';
+import {NextFont} from 'next/dist/compiled/@next/font';
 
-const inter = Inter({subsets: ['latin']});
+const inter: NextFont = Inter({subsets: ['latin']});
 
 export const metadata: Metadata = {
   title: 'Sergio González Sánchez',

@@ -9,6 +9,7 @@ export interface Projects {
 
 
 export const projects: Projects[] = [
+  
   {
     name: 'React Query Issues',
     image: '/react-query.svg',

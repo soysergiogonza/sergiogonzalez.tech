@@ -1,5 +1,6 @@
-import {Projects, projects} from '~/data/projects';
+import {projects} from '~/data/projects';
 import {CardProject} from '~/components/Projects/CardProject/CardProject';
+import {Projects} from '~/interfaces/index';
 
 const Projects = () => {
   return (

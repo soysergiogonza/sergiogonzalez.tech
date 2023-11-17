@@ -1,4 +1,4 @@
-import {Page} from '../interfaces/index';
+import {Page} from '~/interfaces/index';
 
 export const pages: Page[] = [
   {

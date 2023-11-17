@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang='en'>
     <body className={inter.className}>
     <Header />
-    <main className='{/*border-4 border-red-600*/} p-6 container mx-auto grid gap-8'>
+    <main className='container mx-auto grid gap-8'>
       {children}
     </main>
     </body>

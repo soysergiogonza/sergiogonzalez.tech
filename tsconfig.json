@@ -29,8 +29,8 @@
       "~/pages/*": [
         "./src/app/*"
       ],
-      "~/types/*": [
-        "./types/*"
+      "~/interfaces/*": [
+        "./interfaces/*"
       ],
       "~/data/*": [
         "./data/*"

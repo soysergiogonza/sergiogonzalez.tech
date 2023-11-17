@@ -1,12 +1,4 @@
-export interface Projects {
-  name: string,
-  image: string,
-  description: string,
-  urlGitHub: string,
-  urlPreview: string,
-  stack: string[]
-}
-
+import {Projects} from '~/interfaces/index';
 
 export const projects: Projects[] = [
   

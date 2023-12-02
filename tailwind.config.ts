@@ -21,6 +21,5 @@ const config: Config = {
       'xl': '1280px',
     },
   },
-  plugins: [require('tailwindcss-animate')],
 };
 export default config;

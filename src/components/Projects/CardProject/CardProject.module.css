@@ -5,15 +5,17 @@
 	border-radius: .5rem;
 	display: flex;
 	flex-direction: column;
-	transition: all .3s ease-in;
 	position: relative;
 	overflow: hidden;
 	padding: 10px;
 	border-bottom: 10px solid #FFF;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 1);
+	transition: all .3s ease-in;
 }
 
 .cardProject:hover {
 	transform: scale(1.05);
+	transition: transform 0.3s;
 }
 
 .cardProject__head {
@@ -21,24 +23,25 @@
 	border: 2px solid #FFF;
 	background: var(--background-head);
 	padding: 1rem;
-	height: 90px;
-	z-index: 1;
+	max-height: 90px;
+	color: var(--normal-text-color);
 }
 
 .cardProject__head:hover {
-	height: auto;
+	max-height: 500px;
 }
 
-.cardProject__head:hover .cardProject__description {
-	white-space: normal;
-	overflow: visible;
-	text-overflow: clip;
+.cardProject__head a {
+	text-decoration: underline;
+	display: flex;
+	align-items: center;
+	gap: 1rem
 }
 
-.cardProject__title {
-	font-weight: bold;
-	font-size: 1.2rem;
+.cardProject__head a:hover {
+	color: aquamarine;
 }
+
 
 .cardProject__description {
 	font-size: 1.2rem;
@@ -47,10 +50,17 @@
 	text-overflow: ellipsis;
 }
 
-.cardProject__body {
+.cardProject__head:hover .cardProject__description {
+	white-space: normal;
+	max-height: 500px;
 }
 
-.cardProject__body a img {
+.cardProject__title {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.cardProject__body img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;

@@ -11,6 +11,9 @@ const inter: NextFont = Inter({subsets: ['latin']});
 export const metadata: Metadata = {
   title: 'Sergio González Sánchez',
   description: 'Frontend Developer',
+  icons: {
+    icon: '/logo.svg',
+  },
 };
 
 export default function RootLayout({
@@ -19,10 +22,10 @@ export default function RootLayout({
   children: ReactNode
 }) {
   return (
-    <html lang='en'>
+    <html lang="en">
     <body className={inter.className}>
     <Header />
-    <main className='container mx-auto grid gap-8'>
+    <main className="container mx-auto grid gap-8">
       {children}
     </main>
     </body>

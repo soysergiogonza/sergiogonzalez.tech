@@ -39,4 +39,3 @@ export const CardProject = ({project}: Props) => {
     </div>
   );
 };
-

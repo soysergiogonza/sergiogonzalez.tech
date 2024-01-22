@@ -3,18 +3,34 @@
 @tailwind utilities;
 
 :root {
-	--background: rgb(0, 0, 0);
+	--dark-background: rgb(0, 0, 0);
+	--color-primary: #EA580C;
 	--card-background: #FFF;
-	--normal-text-color: #FFF;
+	--darkmode-text-color: #FFF;
 	--background-head: rgb(31, 41, 55);
 	--card-border-radius: .5rem;
-	--card-transition: transform .3s ease-in;
-	margin: 0;
-	padding: 0;
+	--transition: all .3s ease-in;
+	
+	--rounded-full: 9999px;
+	
+	color: var(--darkmode-text-color);
+}
+
+* {
 	box-sizing: border-box;
-	color: var(--normal-text-color);
+	min-width: 0;
 }
 
 body {
-	background: var(--background);
+	min-height: 100dvh;
+	background: var(--dark-background);
 }
+
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance;
+}
+
+p {
+	text-wrap: pretty;
+}
+
